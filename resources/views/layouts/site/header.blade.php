@@ -1,4 +1,4 @@
-<header>
+<header class="">
     <nav class="navbar navbar-expand-lg bg-white m-3 fixed">
       <div class="container ">
         <a class="navbar-brand " href="#" style="color: #421b9b; font-weight: bold ">AKRONTECH</a>

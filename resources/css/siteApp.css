@@ -4,3 +4,12 @@
 .nav-link-2 {
     font-weight: bold !important;
 }
+.text-h1 {
+    font-weight: bold;
+    
+}
+.btn-violet {
+    background-color: #421b9b !important;
+    color: white !important;
+    font-weight: bold !important;
+}
