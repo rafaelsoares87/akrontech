@@ -6,10 +6,21 @@
 }
 .text-h1 {
     font-weight: bold;
-    
+
+}
+.text-h2 {
+    font-weight: 700 !important;
 }
 .btn-violet {
     background-color: #421b9b !important;
     color: white !important;
     font-weight: bold !important;
+}
+.border-bottom-10 {
+    border-bottom: rgb(44, 2, 72) solid 5px !important;
+    border-bottom: radial-gradient(circle, rgba(68, 53, 236, 0.989) 0%, rgba(104,12,226,1) 100%) !important;
+}
+.card .active {
+    -webkit-box-shadow: 5px 3px 10px 0 #421b9b !important;
+    box-shadow: 5px 3px 10px 0 #000000 !important;
 }

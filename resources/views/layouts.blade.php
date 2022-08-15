@@ -10,10 +10,10 @@
 </head>
 <body>
     @include('layouts.site.header')
-    <div class="container">
+    
         
         @yield('content')
-    </div>
+    
     @include('layouts.site.footer')
 
 
