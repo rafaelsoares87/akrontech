@@ -24,3 +24,7 @@
     -webkit-box-shadow: 5px 3px 10px 0 #421b9b !important;
     box-shadow: 5px 3px 10px 0 #000000 !important;
 }
+.text-violet {
+    color: #421b9b !important;
+    font-weight: bold !important;
+}
