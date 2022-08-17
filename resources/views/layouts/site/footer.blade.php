@@ -58,6 +58,15 @@
                     
                 </div>
             </div>
+            <hr>
+            <div class="container">
+                créditos das imagens:
+                <ul>
+                    <li> <a href="https://br.freepik.com/fotos-vetores-gratis/internet"> vectorjuice / Freepik</a></li>
+                    <li> <a href="http://www.freepik.com"> Designed by stories / Freepik</a></li>
+                </ul>
+               
+            </div>
         </div>
     </div>
 </footer>
