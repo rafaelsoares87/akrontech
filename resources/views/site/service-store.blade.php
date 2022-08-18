@@ -1,0 +1,1 @@
+<h1>Página store</h1>
