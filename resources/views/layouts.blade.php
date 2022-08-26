@@ -11,7 +11,7 @@
 <body>
     @include('layouts.site.header')
     
-        <div class="container">
+        <div class="">
             @yield('content')
         </div>
         

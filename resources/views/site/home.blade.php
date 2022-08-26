@@ -1,46 +1,98 @@
-<main class="pt-5 pb-5 ">
-    <section id="banner-top " class=" ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="card border-white pt-5">
+<main class="  ">
+    <section style="background-color: #421b9b" class="pb-5 pt-3">
 
-                        <div class="card-body mb-3">
-                            <h1 class="card-title text-h1">PRECISANDO <br> DE UM SITE?</h1>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-violet btn-lg">SOLICITAR ORÇAMENTO</a>
+        <div class="container d-xl-block d-lg-block d-md-none d-sm-none d-none ">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="container m-4">
+                        <div class="card bg-violet">
+
+                            <div class="card-body">
+                                <h1 class="" style="font-size: 1rem; font-weight:bold">SITE PROFISSIONAL</h1>
+                                <h2 class="card-title" style="font-weight: bold">
+                                    PRECISANDO DE UM SITE?
+                                </h2>
+                                <p class="card-subdescrition">
+                                    Nós desenvolvemos sites institucionais, lojas online, landing pages e marketing
+                                    digital
+                                    para você ou sua empresa se destacar na internet.
+                                </p>
+                               
+                                <div class="col-md-6 mb-3">
+                                    <a href="http://" class="btn btn-light text-violet  ">
+                                        SOLICITAR ORÇAMENTO
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="container">
-                        <div class="card border-white">
-                            <img src="\images\about.webp" alt="" style="width: auto">
-
-                        </div>
-
-
+                <div class="col-md-6">
+                    <div class="container  card bg-violet">
+                        <img src="\images\about1.webp" alt="" class="img-fluid">
                     </div>
 
                 </div>
             </div>
 
+
+
+
+
+
+
+        </div>
+        <div class="container d-xl-none d-lg-none d-md-block d-block d-block ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body bg-violet">
+                        <h1 style="font-size:1rem">SITE PROFISSIONAL</h1>
+                        <h2 style="font-size:2.3rem;font-weight:bold">PRECISANDO DE UM SITE</h2>
+                        <p class="card-text">
+                            Nós desenvolvemos sites institucionais, lojas online, landing pages e marketing digital
+                            para você ou sua empresa se destacar na internet.
+                        </p>
+                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="">
+                        <img src="\images\about1.webp" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            </h1>
+        </div>
+
         </div>
     </section>
-
+   
     <section id="service" class="pt-3" style="padding-bottom: 5rem">
         <div class="container">
-            <div class=" card text-center border-white">
+            <div class=" card text-center border-white mb-5">
                 <div class="card-header">
 
                 </div>
                 <div class="card-body pt-5 mb-5">
                     <h2 class="card-title text-h2">NOSSOS SERVIÇOS </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est voluptatem
-                        magni
-                        veniam, officiis animi?</p>
+                    <p class="card-text">
+                        Com a nossa experiência em design e tecnologia, podemos garantir que o seu projeto fique do jeito que você sempre sonhou.
+                    </p>
 
                 </div>
                 <div class="row "
@@ -54,15 +106,23 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, optio.
+                                Desenvolvemos landing pages criativas e sempre atualizadas com o que há de mais moderno em tecnologia para aumentar as conversões
                             </p>
-                            <div class="mb-3" style="color: #421B9B">
+                            {{-- <div class="mb-3" style="color: #421B9B">
                                 A partir de
                                 <h3 class="card-title text-dark">R$300</h3>
 
 
                             </div>
-                            <a href="" class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</a>
+                            <a href="" class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</a> --}}
+                        </div>
+                        <div class="card-header bg-white">
+                            <div class="mb-3" style="color: #421B9B">
+                                A partir de
+                                <h3 class="card-title text-dark">R$300</h3>
+                            </div>
+
+                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
                         </div>
 
 
@@ -70,20 +130,29 @@
                     </div>
                     <div class="card col-md-3">
                         <div class="card-header">
-                            INSTITUICIONAL
+                            INSTITUCIONAL
                         </div>
 
                         <div class="card-body">
 
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima.
+                                Sites bonitos e responsivos que capturam sua marca exclusiva e ajudam você a atingir seus objetivos de negócios
                             </p>
+                            
+                            {{-- <div class="mb-3" style="color: #421B9B">
+                                A partir de
+                                <h3 class="card-title text-dark">R$500</h3>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button> --}}
+                        </div>
+                        <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
                                 A partir de
                                 <h3 class="card-title text-dark">R$500</h3>
                             </div>
 
-                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button>
+                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
                         </div>
 
                     </div>
@@ -96,13 +165,22 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, nulla.
+                             Lojas Online profissionais, com diversas funcionalidades para facilitar sua vida e aumentar as vendas de seus produtos. 
                             </p>
+                            
+                            {{-- <div class="mb-3" style="color: #421B9B">
+                                A partir de
+                                <h3 class="card-title text-dark">R$790</h3>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button> --}}
+                        </div>
+                        <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
                                 A partir de
                                 <h3 class="card-title text-dark">R$790</h3>
                             </div>
-                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button>
+
+                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
                         </div>
 
 
@@ -115,13 +193,19 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, omnis.
+                                Anuncie seu produto ou serviço na internet com Google Ads, a melhor ferramenta de publicidade online do mundo!
+                                
                             </p>
+                            
+                            
+                        </div>
+                        <div class="card-header bg-white ">
                             <div class="mb-3" style="color: #421B9B">
                                 A partir de
-                                <h3 class="card-title text-dark">R$300</h3>
+                                <h3 class="card-title text-dark">R$500</h3>
                             </div>
-                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button>
+
+                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
                         </div>
 
                     </div>
@@ -129,118 +213,49 @@
                 </div>
 
             </div>
-        </div>
+            <div class="container mb-2">
 
-    </section>
-    <section class="pt-5 " id="about" style="background-color: #ffffff">
-
-        <div class="">
-            <div class=" container">
-
-                <div class="">
-                    <div class="row ">
-                        <div class="col-md-6">
-                            <img src="\images\about1.webp" class="img-fluid" alt="...">
-
+                <div class="card mb-5 border-white ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="\images\website-home.webp" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <div class="card-body">
-                                <h2 class="card-title text-violet" style="font-size: 2.5rem">SITES MODERNOS E CRIATIVOS
-                                </h2>
-                                <h5 class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</h5>
-                                <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit, amet consectetur
-                                        adipisicing elit. Eveniet, eos!</small></p>
-                                <ul class="list-group list-group-flush mb-4">
-                                    <li class="list-group-item text-violet"><i
-                                            class="fa-solid fa-circle-check text-violet "> </i> Sites responsivos para
-                                        tablets, celulares e computadores</li>
-                                    <li class="list-group-item text-violet"><i
-                                            class="fa-solid fa-circle-check text-violet "> </i> Suporte online</li>
-                                    <li class="list-group-item text-violet"><i
-                                            class="fa-solid fa-circle-check text-violet "> </i> Hospedagem grátis e
-                                        domínio personalizado</li>
+                                <h5 class="card-title"> Desenvolvemos soluções criativas para atender às suas
+                                    necessidades específicas de negócio.</h5>
+                                <p class="card-text">
+                                    Desenvolvimento de sites, lojas online, landing pages e marketing digital - temos
+                                    tudo o que sua empresa precisa para crescer na internet!
+                                    <br>
+                                    <br>
+                                    Todas as nossas soluções são baseadas na melhor experiência do usuário possível.
+                                    Queremos que seus clientes tenham uma excelente primeira impressão sobre sua marca e
+                                    por isso trabalhamos duro para entregar sempre o melhor resultado possível.
+                                    <br>
+                                    <br>
+                                    Com o nosso serviço de criação de sites você terá um website profissional com uma
+                                    excelente aparência e funcionalidade que irá te ajudar a conquistar mais clientes
+                                    pela internet. Além disso, contamos com uma equipe especializada em SEO (Search
+                                    Engine Optimization) que irá fazer com que seu site apareça nas primeiras posições
+                                    do Google!
 
 
+                                </p>
 
-                                </ul>
-                                <div class="card-body ">
-                                    <a href="#" class="btn btn-violet btn-lg">Orçamento via Whatsapp</a>
+                                <p>Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!</p>
+                                <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
 
-                                </div>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
-
 
 
             </div>
-
-
-        </div>
-        </div>
-    </section>
-    <section
-        style="background: rgb(168,52,185);
-    background: radial-gradient(circle, rgba(168,52,185,0.9890567050890976) 0%, rgba(66,27,155,1) 100%);">
-
-        <div class="container">
-            <div class="row p-5">
-                <div class="col-md-6">
-                    <div class="m-auto pt-4">
-                        <h2 class="text-white mb-4 " style="font-size: 2.rem">
-                            CONFIRA MAIS DOS NOSSOS SERVIÇOS ATRAVÉS DO CONTATO:
-    
-    
-                        </h2>
-                        <a href="http://" class="btn btn-violet btn-lg"> <i class="fa-brands fa-whatsapp"></i>
-                            ORÇAMENTO</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    
-                    <div class="">
-                        <div class="">
-                            <div class="">
-                                <div class="mb-2">
-                                    <input type="text" class="form-control" placeholder="Nome">
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="mb-2">
-                                    <input type="email" class="form-control" placeholder="E-mail">
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="mb-2">
-                                    <input type="tel" class="form-control" placeholder="Telefone">
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <div class="mb-2">
-                                    <textarea name="" class="form-control" id="" rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-violet btn-lg" type="button">ENVIAR MENSAGEM</button>
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
 
     </section>
+    
+    @include('layouts.site.forms')
 </main>

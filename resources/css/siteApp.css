@@ -24,7 +24,30 @@
     -webkit-box-shadow: 5px 3px 10px 0 #421b9b !important;
     box-shadow: 5px 3px 10px 0 #000000 !important;
 }
+ .bg-violet {
+    background-color: #421b9b !important;
+    color: white !important;
+    font-weight: bold !important;
+    border: #421b9b !important;
+}
 .text-violet {
     color: #421b9b !important;
     font-weight: bold !important;
+   
+}
+.card-bg:hover {    
+    background-color: #421b9b !important;
+    color:white !important
+
+}
+.card-service {
+    color: #421b9b !important;
+    font-weight: bold !important;
+}
+.div-center {
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
 }
