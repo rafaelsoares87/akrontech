@@ -32,7 +32,7 @@
 
                                 </ul>
                                 <div class="col-md-6 mb-3">
-                                    <a href="http://" class="btn btn-light text-violet  ">
+                                    <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
                                         SOLICITAR ORÇAMENTO
                                     </a>
                                 </div>
@@ -70,7 +70,7 @@
                             Nós desenvolvemos as melhores landing pages para você conquistar mais clientes e gerar mais
                             vendas através do seu site ou blog
                         </p>
-                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
 
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                                 Ou até 12x no cartão de crédito
                             </div>
                             <p>Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!</p>
-                            <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                            <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
 
                         </div>
                     </div>

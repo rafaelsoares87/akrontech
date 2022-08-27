@@ -19,7 +19,7 @@
                                 </p>
                                
                                 <div class="col-md-6 mb-3">
-                                    <a href="http://" class="btn btn-light text-violet  ">
+                                    <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
                                         SOLICITAR ORÇAMENTO
                                     </a>
                                 </div>
@@ -57,7 +57,7 @@
                             Nós desenvolvemos sites institucionais, lojas online, landing pages e marketing digital
                             para você ou sua empresa se destacar na internet.
                         </p>
-                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
 
                     </div>
                 </div>
@@ -108,13 +108,7 @@
                             <p class="card-text">
                                 Desenvolvemos landing pages criativas e sempre atualizadas com o que há de mais moderno em tecnologia para aumentar as conversões
                             </p>
-                            {{-- <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$300</h3>
-
-
-                            </div>
-                            <a href="" class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</a> --}}
+                           
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
@@ -122,7 +116,7 @@
                                 <h3 class="card-title text-dark">R$300</h3>
                             </div>
 
-                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
+                            <a href="{{route('landingpage')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
 
@@ -139,12 +133,7 @@
                                 Sites bonitos e responsivos que capturam sua marca exclusiva e ajudam você a atingir seus objetivos de negócios
                             </p>
                             
-                            {{-- <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$500</h3>
-                            </div>
-
-                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button> --}}
+                            
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
@@ -152,7 +141,7 @@
                                 <h3 class="card-title text-dark">R$500</h3>
                             </div>
 
-                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
+                            <a href="{{route('website')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
                     </div>
@@ -168,11 +157,7 @@
                              Lojas Online profissionais, com diversas funcionalidades para facilitar sua vida e aumentar as vendas de seus produtos. 
                             </p>
                             
-                            {{-- <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$790</h3>
-                            </div>
-                            <button class="btn btn-primary btn-lg btn-violet" type="button">Ver mais</button> --}}
+                            
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
@@ -180,7 +165,7 @@
                                 <h3 class="card-title text-dark">R$790</h3>
                             </div>
 
-                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
+                            <a href="{{route('store')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
 
@@ -202,10 +187,10 @@
                         <div class="card-header bg-white ">
                             <div class="mb-3" style="color: #421B9B">
                                 A partir de
-                                <h3 class="card-title text-dark">R$500</h3>
+                                <h3 class="card-title text-dark">R$400</h3>
                             </div>
 
-                            <button class="btn  btn-lg btn-violet" type="button">Ver mais</button>
+                            <a href="{{route('googleads')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
                     </div>
@@ -244,7 +229,7 @@
                                 </p>
 
                                 <p>Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!</p>
-                                <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                                <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
 
                             </div>
                         </div>

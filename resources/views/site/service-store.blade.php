@@ -1,7 +1,5 @@
 <main id="store" class="pb-5">
 
-
-
     <section style="background-color: #421b9b" class="pb-5 pt-3">
 
         <div class="container d-xl-block d-lg-block d-md-none d-sm-none d-none ">
@@ -34,7 +32,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <a href="http://" class="btn btn-light text-violet  ">
+                                    <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
                                         SOLICITAR ORÇAMENTO
                                     </a>
                                 </div>
@@ -68,7 +66,7 @@
                         <p class="card-text">
                             Akrontech cria sites de lojas online que são bonitos, fáceis de usar e geram vendas! 
                         </p>
-                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
                         <div class="">
                             A partir de
                             <h2 class="">R$500</h2>
@@ -125,7 +123,7 @@
                                 </p>
                                 
                                 <p>Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!</p>
-                                <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                                <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
 
                             </div>
                         </div>

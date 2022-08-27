@@ -18,7 +18,7 @@
                                     publicidade online do mundo!
                                 </p>
                                 <div class="col-md-6 mb-3">
-                                    <a href="http://" class="btn btn-light text-violet  ">
+                                    <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
                                         SOLICITAR ORÇAMENTO
                                     </a>
                                 </div>
@@ -52,7 +52,7 @@
                             Anuncie seu produto ou serviço na internet com Google Ads, a melhor ferramenta de
                             publicidade online do mundo!
                         </p>
-                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
 
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                                 <p>Entre em contato conosco e saiba mais sobre os nossos serviços!</p>
                                 <div class="mb-3 ">
                                     
-                                    <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                                    <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
                                 </div>
                                 
 

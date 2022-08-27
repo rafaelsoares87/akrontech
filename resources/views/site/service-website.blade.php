@@ -227,7 +227,7 @@
                                     <li class="list-group-item mb-3"> <i class="fa-solid fa-check "></i> E-mail
                                         Profissional</li>
                                     
-                                        <a href="http://" class="btn btn-light text-violet  ">
+                                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
                                         
                                             SOLICITAR ORÇAMENTO
                                         </a>
@@ -274,7 +274,7 @@
                         <p class="card-text">
                             Páginas profissionais, modernas e dinâmicas para todas as suas necessidades on-line!
                         </p>
-                        <a href="http://" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
                         
                     </div>
                 </div>
@@ -314,13 +314,12 @@
 
                             </p>
                             <div class="container mb-3 ">
-                                A partir de <h2 >R$500</h2>
-                                Ou até 12x no cartão de crédito
+                               
                                 <p>
                                     Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!
                                 </p>
                                 
-                                <a href="http://" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                                <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
                             </div>
                             
                             
