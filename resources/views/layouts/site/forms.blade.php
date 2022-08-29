@@ -22,40 +22,52 @@
                 </div>
             </div>
             <div class="col-md-6">
-
-                <div class="">
+                <form action="{{route('home')}}" method="post">
+                    @csrf
                     <div class="">
                         <div class="">
-                            <div class="mb-2">
-                                <input type="text" class="form-control" placeholder="Nome">
+                            <div class="">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" name="name" placeholder="Nome">
+                                </div>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="mb-2">
-                                <input type="email" class="form-control" placeholder="E-mail">
+                            <div class="">
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                </div>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="mb-2">
-                                <input type="tel" class="form-control" placeholder="Telefone">
+                            <div class="">
+                                <div class="mb-2">
+                                    <input type="tel" class="form-control" name="telefone" placeholder="Telefone">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="">
-                            <div class="mb-2">
-                                <textarea name="" class="form-control" id="" rows="3"></textarea>
+    
+                            <div class="">
+                                <div class="mb-2">
+                                    <textarea name="text" class="form-control" id="" ></textarea>
+                                    
+                                </div>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-violet btn-lg" type="button">ENVIAR MENSAGEM</button>
-
+                            <div class="">
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-violet btn-lg" type="button">ENVIAR MENSAGEM</button>
+    
+                                </div>
                             </div>
+                            @if ($errors->any())
+                                @foreach ($errors -> all() as $error )
+                                    <li class="error">
+                                        {{$error}}
+                                    </li>
+                                    
+                                @endforeach
+                            @endif
+    
+    
                         </div>
-
-
                     </div>
-                </div>
+                </form>
+                
 
             </div>
         </div>

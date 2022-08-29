@@ -84,12 +84,12 @@
    
     <section id="service" class="pt-3" style="padding-bottom: 5rem">
         <div class="container">
-            <div class=" card text-center border-white mb-5">
+            <div class=" card text-center border-white mb-5 pb-3">
                 <div class="card-header">
 
                 </div>
                 <div class="card-body pt-5 mb-5">
-                    <h2 class="card-title text-h2">NOSSOS SERVIÇOS </h2>
+                    <h2 class="card-title text-violet" style="font-size: 3rem">NOSSOS SERVIÇOS </h2>
                     <p class="card-text">
                         Com a nossa experiência em design e tecnologia, podemos garantir que o seu projeto fique do jeito que você sempre sonhou.
                     </p>
@@ -198,7 +198,7 @@
                 </div>
 
             </div>
-            <div class="container mb-2">
+            <div class="container mb-2 pt-5">
 
                 <div class="card mb-5 border-white ">
                     <div class="row g-0">

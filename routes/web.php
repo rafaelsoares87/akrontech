@@ -1,21 +1,16 @@
 <?php
 
+use App\Http\Controllers\FormController;
+use App\Http\Controllers\FormsPageCobtroller;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+
+Route::get('/', [FormsPageCobtroller::class, 'index'])->name('home');
+Route::delete('/dashboard/{id}', [FormController::class, 'destroy'])->name('dashboard-destroy');
+Route::get('/', [FormsPageCobtroller::class, 'create'])->name('home');
+Route::post('/', [FormsPageCobtroller::class, 'store'])->name('home');
+
 
 Route::get('/service/landingpages', function () {
     return view('landingpage');
@@ -32,13 +27,22 @@ Route::get('/service/store', function () {
 Route::get('/service/googleads', function () {
     return view('googleads');
 })->name('googleads');
+Route::get('/contato/formulario-enviado', function () {
+    return view('form-sent');
+})->name('form-sent');
+
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    
+    
+    Route::get('/dashboard', [FormController::class, 'index'])->name('dashboard');
+    
+    Route::get('/dashboard/{id}', [FormController::class, 'show'])->name('dashboard-show');
+    
+    
+    
 });
