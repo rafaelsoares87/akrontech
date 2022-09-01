@@ -34,9 +34,10 @@
                         
                         <div class="card" >
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item"><strong>Nome: </strong>{{$forms->name}}</li>
+                              <li class="list-group-item"><strong>Nome: </strong>{{$forms->nome}}</li>
                               <li class="list-group-item"><strong>E-mail: </strong> {{$forms->email}}</li>
                               <li class="list-group-item"><strong>Telefone: </strong> {{$forms->telefone}}</li>
+                              <li class="list-group-item"><strong>Tipo de serviço: </strong> {{$forms->select_service}}</li>
                             </ul>
                           </div>
                        
@@ -50,7 +51,7 @@
                           Mensagem
                         </div>
                         <div class="card-body">
-                            {{$forms->text}}
+                            {{$forms->mensagem}}
                         </div>
                       </div>
                      

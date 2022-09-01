@@ -18,7 +18,7 @@
                             <div class="row ">
                                 <div class="col-lg-3">
                                     <p style="font-weight: bold">NOME:</p>
-                                    {{ $form->name }}
+                                    {{ $form->nome }}
                                 </div>
                                 <div class="col-lg-3 ">
                                     <p style="font-weight: bold">E-MAIL:</p>

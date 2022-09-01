@@ -24,14 +24,20 @@ class StoreUpdateFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
+            'nome' => 'required|string' ,
             'email' => [
                 'required',
-                'email',
-                'unique:forms',
+                'email' 
+                
 
             ],
-            'text' => 'required'
+            'telefone' => 'required',
+            'mensagem' => 'required',
+            'select_service',
+           
+           
         ];
     }
+    
+    
 }

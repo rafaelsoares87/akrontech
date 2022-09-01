@@ -10,9 +10,10 @@ class Form extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'nome',
         'email',
         'telefone',
-        'text',
+        'mensagem',
+        'select_service'
     ];
 }

@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/css/siteApp.css',
                 'resources/js/app.js',
+                'resources/js/mask.js',
             ],
             refresh: [
                 ...refreshPaths,
