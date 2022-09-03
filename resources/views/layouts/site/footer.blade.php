@@ -8,21 +8,28 @@
                             style="-webkit-box-shadow: 10px 13px 7px -3px #000000; 
                         box-shadow: 10px 13px 7px -3px #000000;">
 
-                            <ul class="">
-                                <li class="list-group-item text-dark mb-3">
-                                    <h3>Contato</h3>
-                                </li>
-                                <li class="list-group-item text-dark mb-3">
-                                    <i class="fa-brands fa-whatsapp"> 11 9999-9999</i>
-                                </li>
-                                <li class="list-group-item text-dark mb-3">
-                                     <i class="fa-solid fa-phone"></i> 11 9999-9999
-                                </li>
-                                <li class="list-group-item text-dark mb-3">
-                                    <i class="fa-solid fa-envelope"></i>  contato@akrontech.com.br
-                                   
-                                </li>
-                            </ul>
+                            @foreach ($webs as $web)
+                                
+                                <ul class="">
+
+                                    <li class="list-group-item text-dark mb-3">
+                                        <h3>Contato</h3>
+                                    </li>
+
+                                    <li class="list-group-item text-dark mb-3">
+                                        <i class="fa-brands fa-whatsapp"></i> {{$web->web_phone_number}}
+                                    </li>
+                                    <li class="list-group-item text-dark mb-3">
+                                        <i class="fa-solid fa-phone"></i> {{$web->web_phone_whatsapp}}
+                                    </li>
+                                    <li class="list-group-item text-dark mb-3">
+                                        <i class="fa-solid fa-envelope"></i> {{$web->web_email}}
+
+                                    </li>
+                                </ul>
+                            @endforeach
+
+
                         </div>
                     </div>
                     <div class="col-md-4 mb-3  ">
@@ -35,10 +42,11 @@
                                 <li class="list-group-item nav-item mb-3" style="font-weight: bold">
                                     <a href="{{ route('landingpage') }}" class="nav-link"> Landing Pages</a>
                                 </li>
-                                <li class="list-group-item nav-item mb-3"style="font-weight: bold"> 
-                                    <a href="{{ route('website') }}"class="nav-link"> Sites  </a>
+                                <li class="list-group-item nav-item mb-3"style="font-weight: bold">
+                                    <a href="{{ route('website') }}"class="nav-link"> Sites </a>
                                 </li>
-                                <li class="list-group-item nav-item mb-3"style="font-weight: bold"> <a href="{{ route('store') }}"class="nav-link"> Lojas Online</a></li>
+                                <li class="list-group-item nav-item mb-3"style="font-weight: bold"> <a
+                                        href="{{ route('store') }}"class="nav-link"> Lojas Online</a></li>
                                 <li class="list-group-item nav-item mb-3"style="font-weight: bold">
                                     <a href="{{ route('googleads') }}" class="nav-link"> Marketing Digital </a>
                                 </li>
@@ -46,7 +54,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <div class="">
 
@@ -83,17 +91,18 @@
                 © 2022 - Todos os direitos reservados Akrontech
             </div>
             <div class="container text-center text-white">
-            
-                
+
+
                 <ul class="nav justify-content-center">
-                    
+
                     <li class="nav-item">
-                      <a class="nav-link" href="https://br.freepik.com/fotos-vetores-gratis/internet">Créditos das imagens: Designed by stories / Freepik</a>
+                        <a class="nav-link" href="https://br.freepik.com/fotos-vetores-gratis/internet">Créditos das
+                            imagens: Designed by stories / Freepik</a>
                     </li>
-                    
-                    
-                  </ul>
-              
+
+
+                </ul>
+
 
             </div>
         </div>

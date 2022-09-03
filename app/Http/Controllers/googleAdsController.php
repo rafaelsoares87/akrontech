@@ -2,15 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreUpdateFormRequest;
 use App\Models\EditSite;
 use Illuminate\Http\Request;
 
-
-
-use App\Models\Form;
-
-class FormsPageCobtroller extends Controller
+class googleAdsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,10 +14,8 @@ class FormsPageCobtroller extends Controller
      */
     public function index()
     {
-        // return view('index');
-        // // $forms = Form:: get();
-        
-       
+        $webs = EditSite:: get();
+        return view('googleads', compact('webs'));
     }
 
     /**
@@ -32,10 +25,7 @@ class FormsPageCobtroller extends Controller
      */
     public function create()
     {
-        $webs = EditSite:: get();
-
-        return view('index', compact('webs'));
-        // return view('index');
+        //
     }
 
     /**
@@ -44,13 +34,9 @@ class FormsPageCobtroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreUpdateFormRequest $request)
-    {   
-        
-        Form::create($request->all());
-        return redirect()->route('form-sent');
-
-    
+    public function store(Request $request)
+    {
+        //
     }
 
     /**

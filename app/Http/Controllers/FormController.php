@@ -92,6 +92,6 @@ class FormController extends Controller
             return redirect()->back();
         }
         $forms->delete();
-        return redirect('dashboard');
+        return redirect()->route('dashboard');
     }
 }

@@ -2,15 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreUpdateFormRequest;
 use App\Models\EditSite;
 use Illuminate\Http\Request;
 
-
-
-use App\Models\Form;
-
-class FormsPageCobtroller extends Controller
+class WebSiteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,10 +14,9 @@ class FormsPageCobtroller extends Controller
      */
     public function index()
     {
-        // return view('index');
-        // // $forms = Form:: get();
-        
-       
+        // $webs = EditSite:: get();
+
+        // return view('index', compact('webs'));
     }
 
     /**
@@ -32,10 +26,7 @@ class FormsPageCobtroller extends Controller
      */
     public function create()
     {
-        $webs = EditSite:: get();
-
-        return view('index', compact('webs'));
-        // return view('index');
+        return view('admin.website.create');
     }
 
     /**
@@ -44,13 +35,10 @@ class FormsPageCobtroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreUpdateFormRequest $request)
-    {   
-        
-        Form::create($request->all());
-        return redirect()->route('form-sent');
-
-    
+    public function store(Request $request)
+    {
+        EditSite::create($request->all());
+        return redirect()->route('dashboard');
     }
 
     /**
@@ -61,7 +49,11 @@ class FormsPageCobtroller extends Controller
      */
     public function show($id)
     {
-        //
+        
+        // if(!$forms = Form::find($id)) {
+        //     return redirect()->back();
+        // }
+        // return view('admin.show', compact('forms'));
     }
 
     /**
@@ -72,7 +64,7 @@ class FormsPageCobtroller extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.website.edit');
     }
 
     /**

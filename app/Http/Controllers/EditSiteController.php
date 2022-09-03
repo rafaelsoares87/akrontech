@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreUpdateFormRequest;
+use App\Http\Requests\StoreEditSiteRequest;
+use App\Http\Requests\UpdateEditSiteRequest;
 use App\Models\EditSite;
-use Illuminate\Http\Request;
 
-
-
-use App\Models\Form;
-
-class FormsPageCobtroller extends Controller
+class EditSiteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,10 +15,7 @@ class FormsPageCobtroller extends Controller
      */
     public function index()
     {
-        // return view('index');
-        // // $forms = Form:: get();
-        
-       
+        return view('index');
     }
 
     /**
@@ -32,34 +25,28 @@ class FormsPageCobtroller extends Controller
      */
     public function create()
     {
-        $webs = EditSite:: get();
-
-        return view('index', compact('webs'));
-        // return view('index');
+        return view('admin.website.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreEditSiteRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreUpdateFormRequest $request)
-    {   
-        
-        Form::create($request->all());
-        return redirect()->route('form-sent');
-
-    
+    public function store(StoreEditSiteRequest $request)
+    {
+        EditSite::create($request->all());
+        return redirect()->route('dashboard');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\EditSite  $editSite
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(EditSite $editSite)
     {
         //
     }
@@ -67,22 +54,22 @@ class FormsPageCobtroller extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\EditSite  $editSite
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(EditSite $editSite)
     {
-        //
+        return view('admin.website.edit');
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Http\Requests\UpdateEditSiteRequest  $request
+     * @param  \App\Models\EditSite  $editSite
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateEditSiteRequest $request, EditSite $editSite)
     {
         //
     }
@@ -90,10 +77,10 @@ class FormsPageCobtroller extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\EditSite  $editSite
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(EditSite $editSite)
     {
         //
     }
