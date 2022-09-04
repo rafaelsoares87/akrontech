@@ -17,7 +17,8 @@
                                     </li>
 
                                     <li class="list-group-item text-dark mb-3">
-                                        <i class="fa-brands fa-whatsapp"></i> {{$web->web_phone_number}}
+                                       
+                                        <i class="fa-brands fa-whatsapp"></i> {{$web->web_phone_number}} 
                                     </li>
                                     <li class="list-group-item text-dark mb-3">
                                         <i class="fa-solid fa-phone"></i> {{$web->web_phone_whatsapp}}
