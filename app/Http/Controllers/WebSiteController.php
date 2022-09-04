@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateEditSiteRequest;
 use App\Models\EditSite;
 use Illuminate\Http\Request;
 
@@ -14,9 +15,7 @@ class WebSiteController extends Controller
      */
     public function index()
     {
-        // $webs = EditSite:: get();
-
-        // return view('index', compact('webs'));
+        return view('admin.website.edit');
     }
 
     /**
@@ -64,7 +63,10 @@ class WebSiteController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.website.edit');
+        if(!$webs = EditSite::find($id)) {
+            return redirect()->back();
+        }
+        return view('admin.website.edit', compact('webs'));
     }
 
     /**
@@ -74,9 +76,16 @@ class WebSiteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateEditSiteRequest $request, $id)
     {
-        //
+        if(!$webs = EditSite::find($id)) {
+            return redirect()->back();
+        }
+        $data = $request->all();
+        $webs->update($data);
+
+        return redirect()->route('dashboard');
+
     }
 
     /**

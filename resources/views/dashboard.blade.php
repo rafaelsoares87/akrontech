@@ -8,13 +8,16 @@
                 </h2>
             </div>
             <div class="col-lg-4">
+                @foreach ($webs as $item)
                 <div class="text text-right ">
-                    <a href="{{route('admin-edit')}}" class="btn btn btn-secondary">
-                        <i class="fa-sharp fa-solid fa-gear"></i> Configurações do site
+                    <a href="{{route('admin-edit', [$item->id])}}" class="btn btn btn-secondary"> CONFIGURAÇÕES DO SITE
+                        <i class="fa-sharp fa-solid fa-gear"></i> 
                     </a>
             
                     
                 </div>
+                @endforeach
+               
             </div>
         </div>
        

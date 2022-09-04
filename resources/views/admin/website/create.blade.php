@@ -9,9 +9,9 @@
             </div>
             <div class="col-lg-4">
                 <div class="text text-right ">
-                    <a href="{{route('admin-edit')}}" class="btn btn btn-secondary">
+                    {{-- <a href="{{route('admin-edit')}}" class="btn btn btn-secondary">
                         <i class="fa-sharp fa-solid fa-gear"></i> EDITAR CONFIGURAÇÕES DO SITE
-                    </a>
+                    </a> --}}
                     
                     
                 </div>

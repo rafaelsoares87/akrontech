@@ -13,7 +13,7 @@ class UpdateEditSiteRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class UpdateEditSiteRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'web_phone_number' ,
+            'web_phone_whatsapp' ,
+            'web_link_whatsapp' ,
+            'web_email' , 
+            'plans_price_website',
+            'plans_price_landingpage',
+            'plans_price_ecommerce',
+            'plans_price_marketing_digital' ,
         ];
     }
 }

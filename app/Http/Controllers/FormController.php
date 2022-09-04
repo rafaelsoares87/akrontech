@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EditSite;
 use Illuminate\Http\Request;
 use App\Models\Form;
 
@@ -15,8 +16,9 @@ class FormController extends Controller
     public function index()
     {
         $forms = Form:: get();
+        $webs = EditSite:: get();
 
-        return view('dashboard', compact('forms'));
+        return view('dashboard', compact('forms', 'webs'));
     }
 
     /**

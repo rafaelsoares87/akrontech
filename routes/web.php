@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 
 //Admin Web site settings
 
+
 Route::get('/dashboard/admin/create', [WebSiteController::class, 'create'])->name('admin-create');
 Route::post('/dashboard/admin/create', [WebSiteController::class, 'store'])->name('admin-store');
-Route::get('/dashboard/admin/edit', [WebSiteController::class, 'edit'])->name('admin-edit');
+Route::get('/dashboard/admin/edit/{id}', [WebSiteController::class, 'edit'])->name('admin-edit');
+Route::patch('/dashboard/admin/{id}', [WebSiteController::class, 'update'])->name('admin-update');
+
 
 
 
