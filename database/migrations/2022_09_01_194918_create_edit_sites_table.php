@@ -23,6 +23,9 @@ return new class extends Migration
             $table->string('plans_price_landingpage')->unique();
             $table->string('plans_price_ecommerce')->unique();
             $table->string('plans_price_marketing_digital')->unique();
+            $table->string('link_facebook')->unique();
+            $table->string('link_instagram')->unique();
+            $table->string('link_telegram')->unique();
             $table->timestamps();
         });
     }

@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-md-4 mb-3  ">
                         <div class="">
-
+                            
                             <ul class="">
                                 <li class="list-group-item mb-3">
                                     <h3>Serviços</h3>
@@ -58,14 +58,15 @@
 
                     <div class="col-md-4">
                         <div class="">
-
+                            @foreach ($webs as $media_social)
                             <ul class="">
+
                                 <li class="list-group-item">
                                     <h3>Redes Sociais</h3>
                                 </li><br>
 
                                 <li class="list-group-item nav-item mb-3">
-                                    <a href="https://www.facebook.com/anvi.misturadores" class="nav-link">
+                                    <a href="{{$media_social->link_facebook}}" class="nav-link">
                                         <i class="fa-brands fa-facebook fa-2x">
 
                                         </i>
@@ -74,14 +75,18 @@
 
                                 </li>
                                 <li class="list-group-item nav-item mb-3">
-                                    <a href="http://" class="nav-link">
+                                    <a href="{{$media_social->link_instagram}}" class="nav-link" target="_blank">
                                         <i class="fa-brands fa-instagram fa-2x"></i> Instagram
                                     </a>
                                 </li>
-                                <li class="list-group-item nav-item mb-3"><i class="fa-brands fa-telegram fa-2x"></i>
-                                    Telegram
+                                <li class="list-group-item nav-item mb-3">
+                                    <a href="{{$media_social->link_telegram}}" class="nav-link" target="_blank">
+                                        <i class="fa-brands fa-telegram fa-2x"></i> Telegram
+                                    </a>
                                 </li>
                             </ul>
+                            @endforeach
+                            
                         </div>
                     </div>
 

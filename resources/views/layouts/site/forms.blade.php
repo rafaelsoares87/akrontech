@@ -12,13 +12,17 @@
 
                     </h2>
                     <div class="mb-3">
-                        <a href="http://" class="btn btn-violet btn-lg mb-3"> <i class="fa-brands fa-whatsapp"></i>
-                            WHATSAPP
-                        </a>
-                        <a href="http://" class="btn btn-dark btn-lg mb-3" style="font-weight: bold"> <i
-                                class="fa-solid fa-phone"></i>
-                            LIGAR
-                        </a>
+                        @foreach ($webs as $contact)
+                            <a href="{{$contact->web_link_whatsapp}}" class="btn btn-violet btn-lg mb-3" target="_blank"> <i
+                                    class="fa-brands fa-whatsapp"></i>
+                                WHATSAPP
+                            </a>
+                            <a href="tel:+{{$contact->web_phone_number}}" class="btn btn-dark btn-lg mb-3" style="font-weight: bold"> <i
+                                    class="fa-solid fa-phone"></i>
+                                LIGAR
+                            </a>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
@@ -29,11 +33,11 @@
                         <div class="">
                             <div class="">
                                 <div class="mb-2">
-                                    
+
                                     <input type="text"
                                         class="form-control  @if ($errors->has('nome')) is-invalid @endif"
-                                        name="nome" placeholder="Nome" value="{{ old('nome') }}" > 
-                                    
+                                        name="nome" placeholder="Nome" value="{{ old('nome') }}">
+
 
                                     @if ($errors->has('nome'))
                                         <div class="invalid-feedback">

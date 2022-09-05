@@ -18,5 +18,8 @@ class EditSite extends Model
         'plans_price_landingpage',
         'plans_price_ecommerce',
         'plans_price_marketing_digital',
+        'link_facebook',
+        'link_instagram',
+        'link_telegram',
     ];
 }

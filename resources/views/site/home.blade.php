@@ -17,9 +17,9 @@
                                     digital
                                     para você ou sua empresa se destacar na internet.
                                 </p>
-                               
+
                                 <div class="col-md-6 mb-3">
-                                    <a href="{{route('home')}}#contact" class="btn btn-light text-violet  ">
+                                    <a href="{{ route('home') }}#contact" class="btn btn-light text-violet  ">
                                         SOLICITAR ORÇAMENTO
                                     </a>
                                 </div>
@@ -57,7 +57,8 @@
                             Nós desenvolvemos sites institucionais, lojas online, landing pages e marketing digital
                             para você ou sua empresa se destacar na internet.
                         </p>
-                        <a href="{{route('home')}}#contact" class="btn btn-light text-violet mb-3">SOLICITAR ORÇAMENTO</a>
+                        <a href="{{ route('home') }}#contact" class="btn btn-light text-violet mb-3">SOLICITAR
+                            ORÇAMENTO</a>
 
                     </div>
                 </div>
@@ -81,7 +82,7 @@
 
         </div>
     </section>
-   
+
     <section id="service" class="pt-3" style="padding-bottom: 5rem">
         <div class="container">
             <div class=" card text-center border-white mb-5 pb-3">
@@ -91,7 +92,8 @@
                 <div class="card-body pt-5 mb-5">
                     <h2 class="card-title text-violet" style="font-size: 3rem">NOSSOS SERVIÇOS </h2>
                     <p class="card-text">
-                        Com a nossa experiência em design e tecnologia, podemos garantir que o seu projeto fique do jeito que você sempre sonhou.
+                        Com a nossa experiência em design e tecnologia, podemos garantir que o seu projeto fique do
+                        jeito que você sempre sonhou.
                     </p>
 
                 </div>
@@ -106,17 +108,22 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Desenvolvemos landing pages criativas e sempre atualizadas com o que há de mais moderno em tecnologia para aumentar as conversões
+                                Desenvolvemos landing pages criativas e sempre atualizadas com o que há de mais moderno
+                                em tecnologia para aumentar as conversões
                             </p>
-                           
+
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$300</h3>
+                                @foreach ($webs as $price)
+                                    A partir de
+                                    <h3 class="card-title text-dark">{{ $price->plans_price_landingpage }}</h3>
+                                @endforeach
+
                             </div>
 
-                            <a href="{{route('landingpage')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
+                            <a href="{{ route('landingpage') }}" class="btn  btn-lg btn-violet" type="button">Ver
+                                mais</a>
                         </div>
 
 
@@ -130,18 +137,21 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Sites bonitos e responsivos que capturam sua marca exclusiva e ajudam você a atingir seus objetivos de negócios
+                                Sites bonitos e responsivos que capturam sua marca exclusiva e ajudam você a atingir
+                                seus objetivos de negócios
                             </p>
-                            
-                            
+
+
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$500</h3>
+                                @foreach ($webs as $price)
+                                    A partir de
+                                    <h3 class="card-title text-dark">{{ $price->plans_price_website }}</h3>
+                                @endforeach
                             </div>
 
-                            <a href="{{route('website')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
+                            <a href="{{ route('website') }}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
                     </div>
@@ -154,18 +164,21 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                             Lojas Online profissionais, com diversas funcionalidades para facilitar sua vida e aumentar as vendas de seus produtos. 
+                                Lojas Online profissionais, com diversas funcionalidades para facilitar sua vida e
+                                aumentar as vendas de seus produtos.
                             </p>
-                            
-                            
+
+
                         </div>
                         <div class="card-header bg-white">
                             <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$790</h3>
+                                @foreach ($webs as $price)
+                                    A partir de
+                                    <h3 class="card-title text-dark">{{ $price->plans_price_ecommerce }}</h3>
+                                @endforeach
                             </div>
 
-                            <a href="{{route('store')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
+                            <a href="{{ route('store') }}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
                         </div>
 
 
@@ -178,19 +191,23 @@
                         <div class="card-body">
 
                             <p class="card-text">
-                                Anuncie seu produto ou serviço na internet com Google Ads, a melhor ferramenta de publicidade online do mundo!
-                                
+                                Anuncie seu produto ou serviço na internet com Google Ads, a melhor ferramenta de
+                                publicidade online do mundo!
+
                             </p>
-                            
-                            
+
+
                         </div>
                         <div class="card-header bg-white ">
                             <div class="mb-3" style="color: #421B9B">
-                                A partir de
-                                <h3 class="card-title text-dark">R$400</h3>
+                                @foreach ($webs as $price)
+                                    A partir de
+                                    <h3 class="card-title text-dark">{{ $price->plans_price_marketing_digital }}</h3>
+                                @endforeach
                             </div>
 
-                            <a href="{{route('googleads')}}" class="btn  btn-lg btn-violet" type="button">Ver mais</a>
+                            <a href="{{ route('googleads') }}" class="btn  btn-lg btn-violet" type="button">Ver
+                                mais</a>
                         </div>
 
                     </div>
@@ -229,7 +246,8 @@
                                 </p>
 
                                 <p>Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso!</p>
-                                <a href="{{route('home')}}#contact" class="btn btn-violet btn-lg">SOLICITE UM ORÇAMENTO</a>
+                                <a href="{{ route('home') }}#contact" class="btn btn-violet btn-lg">SOLICITE UM
+                                    ORÇAMENTO</a>
 
                             </div>
                         </div>
@@ -241,6 +259,6 @@
         </div>
 
     </section>
-    
+
     @include('layouts.site.forms')
 </main>

@@ -13,58 +13,91 @@
             </a>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                <div class="container">
-                    <h2>Editar</h2>
-                </div>
-                <div class="row container m-4">
-                    <div class="col-lg-4">
+                
+                <div class="container m-4">
+                    <div class="">
                         <form action="{{ route('admin-update', $webs->id) }}" method="POST">
                             @csrf
                             @method('PATCH')
-        
-                            <div class="">
-                                <label for=""></label><strong>Número de telefone</strong>
-                                <input class="form-control mb-3" type="text" name="web_phone_number" value="{{ $webs->web_phone_number }}">
+
+                            <div class="row">
+                                
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Número de telefone</label>
+                                        <input class="form-control mb-3" type="text" name="web_phone_number" value="{{ $webs->web_phone_number }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Whatsapp</label>
+                                        <input class="form-control mb-3" type="text" name="web_phone_whatsapp" value="{{ $webs->web_phone_whatsapp }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Link Whatsapp</label>
+                                        <input class="form-control mb-3" type="text" name="web_link_whatsapp" value="{{ $webs->web_link_whatsapp }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">E-mail</label>
+                                        <input class="form-control mb-3" type="text" name="web_email" value="{{$webs->web_email }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Preço site</label>
+                                        <input class="form-control mb-3" type="text" name="plans_price_website" value="{{ $webs->plans_price_website }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Preço landing page</label>
+                                        <input class="form-control mb-3" type="text" name="plans_price_landingpage"
+                                            value="{{ $webs->plans_price_landingpage }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Preço loja virtual</label>
+                                        <input class="form-control mb-3" type="text" name="plans_price_ecommerce" value="{{ $webs->plans_price_ecommerce }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Preço Google Ads</label>
+                                        <input class="form-control mb-3" type="text" name="plans_price_marketing_digital"
+                                            value="{{ $webs->plans_price_marketing_digital }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Link  do Facebook</label>
+                                        <input class="form-control mb-3" type="text" name="link_facebook"
+                                            value="{{ $webs->link_facebook }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Link do Instagram</label>
+                                        <input class="form-control mb-3" type="text" name="link_instagram"
+                                            value="{{ $webs->link_instagram }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="">
+                                        <label for="">Link do Telegram</label>
+                                        <input class="form-control mb-3" type="text" name="link_telegram"
+                                            value="{{ $webs->link_telegram }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="submit" class="btn btn-secondary btn-lg m-3">Atualizar</button>
+                                </div>
                             </div>
-                            <div class="">
-                                <label for="">Whatsapp</label>
-                                <input class="form-control mb-3" type="text" name="web_phone_whatsapp" value="{{ $webs->web_phone_whatsapp }}">
-                            </div>
-                            <div class="">
-                                <label for="">Link Whatsapp</label>
-                                <input class="form-control mb-3" type="text" name="web_link_whatsapp" value="{{ $webs->web_link_whatsapp }}">
-                            </div>
-                            <div class="">
-                                <label for="">E-mail</label>
-                                <input class="form-control mb-3" type="text" name="web_email" value="{{$webs->web_email }}">
-                            </div>
-                            <div class="">
-                                <label for="">Preço site</label>
-                                <input class="form-control mb-3" type="text" name="plans_price_website" value="{{ $webs->plans_price_website }}">
-                            </div>
-                            <div class="">
-                                <label for="">Preço landing page</label>
-                                <input class="form-control mb-3" type="text" name="plans_price_landingpage"
-                                    value="{{ $webs->plans_price_landingpage }}">
-                            </div>
-                            <div class="">
-                                <label for="">Preço loja virtual</label>
-                                <input class="form-control mb-3" type="text" name="plans_price_ecommerce" value="{{ $webs->plans_price_ecommerce }}">
-                            </div>
-                            <div class="">
-                                <label for="">Preço Google Ads</label>
-                                <input class="form-control mb-3" type="text" name="plans_price_marketing_digital"
-                                    value="{{ $webs->plans_price_marketing_digital }}">
-                            </div>
-                            <button type="submit">atualizar</button>
-        
-        
-        
-        
-        
-        
-        
-        
+
         
                         </form>
                     </div>

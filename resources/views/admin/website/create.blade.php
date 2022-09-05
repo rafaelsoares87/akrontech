@@ -70,6 +70,21 @@
                                     <input type="text" class="form-control" placeholder="Preço do google ads" name="plans_price_marketing_digital">
                                 </div>
                             </div>
+                            <div class="col-lg-3">
+                                <div class="mb-5">
+                                    <input type="text" class="form-control" placeholder="Link do Facebook" name="link_facebook">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mb-5">
+                                    <input type="text" class="form-control" placeholder="Link do Instagram" name="link_instagram">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mb-5">
+                                    <input type="text" class="form-control" placeholder="Link do telegram" name="link_telegram">
+                                </div>
+                            </div>
                             <div class="col-lg-8 mb-"></div>
                             <div class="col-lg-4 text-right">
                                 <div class="">
